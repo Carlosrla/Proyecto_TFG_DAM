@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="homeTitle" type="id" />
+    <item name="transaccionesPendientesTitle" type="id" />
+    <item name="noTransaccionesMessage" type="id" />
+    <item name="recyclerViewTransaccionesPendientes" type="id" />
+    <item name="proximasCitasTitle" type="id" />
+    <item name="noCitasMessage" type="id" />
+</resources>

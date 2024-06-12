@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título del Home -->
+        <TextView
+            android:id="@+id/homeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gestion Inmobiliaria"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Imagen -->
+        <ImageView
+            android:id="@+id/homeImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/grafico"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Título de Transacciones Pendientes -->
+        <TextView
+            android:id="@+id/transaccionesPendientesTitle"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#9369DF"
+            android:text="Transacciones Pendientes"
+            android:textColor="#090909"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- RecyclerView de Transacciones Pendientes -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewTransaccionesPendientes"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Mensaje cuando no hay Transacciones Pendientes -->
+        <TextView
+            android:id="@+id/noTransaccionesMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No hay transacciones pendientes"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <!-- Título de Próximas Citas -->
+        <TextView
+            android:id="@+id/proximasCitasTitle"
+            android:layout_width="377dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#885ED3"
+            android:text="Próximas Citas"
+            android:textColor="#121111"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- RecyclerView de Próximas Citas -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewCitas"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Mensaje cuando no hay Citas -->
+        <TextView
+            android:id="@+id/noCitasMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No hay citas próximas"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <!-- Espacio adicional para evitar que las citas se tapen con el menú -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+    </LinearLayout>
+</ScrollView>

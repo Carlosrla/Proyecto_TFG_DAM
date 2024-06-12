@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Tfg_CarlosRamos</string>
+    <string name="menu_clientes">Clientes</string>
+    <string name="menu_propiedades">Propiedades</string>
+    <string name="menu_transacciones">Transacciones</string>
+    <string name="menu_notas">Notas</string>
+    <string name="menu_home">Home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_cliente">Añadir Cliente</string>
+    <string-array name="estados_propiedad">
+        <item>Disponible</item>
+        <item>Reservada</item>
+        <item>Vendida</item>
+    </string-array>
+</resources>

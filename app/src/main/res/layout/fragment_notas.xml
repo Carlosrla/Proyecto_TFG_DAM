@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchViewClientes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Buscar cliente por nombre o apellido"
+        android:layout_alignParentTop="true" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchViewClientes"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="28dp"
+        android:src="@android:drawable/ic_input_add"
+        android:visibility="visible" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewClientesConNotas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/fabAddNota"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp"
+        android:scrollbars="vertical" />
+</RelativeLayout>
